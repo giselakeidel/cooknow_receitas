@@ -1,10 +1,18 @@
 <h1>Receitas</h1>
-<ul>
+
   <% @recipes.each do |recipe| %>
-    <li>
-      <%= recipe.name %>
-      <%= recipe.stuff %>
-      <%= recipe.calories %>
-    </li>
+    <article>
+      <header>
+        <h3><%= recipe.name %></h3>
+      </header>
+      <p>
+        <i>Ingredientes:</i> <%= recipe.stuff %>
+      </p>
+      <p>
+        <i>Calorias:</i> <%= recipe.calories %>
+      </p>
+      <p>
+        <i>Modo de Preparo:</i> <%= recipe.prepare_mode %>
+      </p>
+    </article>
   <% end %>
-</ul>
