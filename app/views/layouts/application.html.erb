@@ -11,6 +11,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= nav_bar brand: "CookNow", brand_link: root_url  %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

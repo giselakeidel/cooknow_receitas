@@ -7,16 +7,17 @@
         <%= imagem(recipe) %>
       </header>
       <p>
-        <i>Ingredientes:</i> <%= recipe.stuff %>
+        </br>
+        <i><b>Ingredientes:</b></i> <%= recipe.stuff %>
       </p>
       <p>
-        <i>Calorias:</i> <%= recipe.calories %>
+        <i><b>Calorias:</b></i> <%= recipe.calories %>
       </p>
       <p>
-        <i>Tempo de Preparo:</i> <%= recipe.duration %> min
+        <i><b>Tempo de Preparo:</b></i> <%= recipe.duration.strftime("%H:%M") %> min
       </p>
       <p>
-        <i>Modo de Preparo:</i> <%= recipe.prepare_mode %>
+        <i><b>Modo de Preparo:</b></i> <%= recipe.prepare_mode %>
       </p>
     </article>
   <% end %>
