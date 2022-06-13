@@ -17,9 +17,12 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
   end
   def create
-    @recipe = Recipe.new(recipe_params)
+    @recipe = Recipe.new(post_params)
     @recipe.save
     redirect_to @recipe
+  end
+  def post_params
+    params.require(:recipe).permit(:name, :stuff, :calories, :prepare_mode, :kind, :portion, :duration, :poster)
   end
   def destroy
     @recipe = Recipe.find(params[:id])
@@ -30,6 +33,7 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:name, :stuff, :calories, :prepare_mode)
+    params.require(:recipe).permit(:name, :stuff, :calories, :prepare_mode, :kind, :portion, :duration, :poster)
   end
+
 end

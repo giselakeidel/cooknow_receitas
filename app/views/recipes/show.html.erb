@@ -1,7 +1,12 @@
  <article>
   <header>
     <h3><%= @recipe.name %></h3>
+        <%= imagem(@recipe) %>
   </header>
+  <h3>Tipo</h3>
+  <p>
+    <%= @recipe.kind %>
+  </p>
   <p>
     <i>Ingredientes:</i> <%= @recipe.stuff %>
   </p>
@@ -10,6 +15,12 @@
   </p>
   <p>
     <i>Modo de Preparo:</i> <%= @recipe.prepare_mode %>
+  </p>
+   <p>
+    <i>Porções:</i> <%= @recipe.portion %>
+  </p>
+   <p>
+    <i>Tempo de Preparo:</i> <%= @recipe.duration %> min
   </p>
 </article>
 
