@@ -1,14 +1,7 @@
 class RecipesController < ApplicationController
   def index
-    if params[:query].present?
-      @recipes = Recipe.where("name LIKE ?", "%#{params[:query]}%")
-    else
-      @recipes = Recipe.all
-    end
+    @recipes = Recipe.created_at
   end
-  # def index
-  #   @recipes = Recipe.created_at
-  # end
   def show
     @recipe = Recipe.find(params[:id])
   end
