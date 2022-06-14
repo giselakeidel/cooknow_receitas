@@ -1,7 +1,7 @@
 <h1>Receitas</h1>
 
   <% @recipes.each do |recipe| %>
-  
+
     <article>
       <header>
         <h3><%= link_to recipe.name, recipe_path(recipe) %></h3>
@@ -10,11 +10,4 @@
     </article>
   <% end %>
 
-<%= form_tag recipes_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Encontre uma receita"
-  %>
-  <%= submit_tag "Buscar", class: "btn btn-primary" %>
-<% end %>
+
