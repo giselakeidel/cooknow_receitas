@@ -20,7 +20,7 @@
     <i><b>Porções:</b></i> <%= @recipe.portion %>
   </p>
    <p>
-    <i><b>Tempo de Preparo:</b></i> <%= @recipe.duration %> min
+    <i><b>Tempo de Preparo:</b></i> <%= @recipe.duration.strftime("%H:%M") %> min
   </p>
 </article>
 
