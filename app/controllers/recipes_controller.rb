@@ -6,6 +6,9 @@ class RecipesController < ApplicationController
       @recipes = Recipe.all
     end
   end
+  # def index
+  #   @recipes = Recipe.created_at
+  # end
   def show
     @recipe = Recipe.find(params[:id])
   end
@@ -33,7 +36,10 @@ class RecipesController < ApplicationController
     @recipe.destroy
     redirect_to recipes_url
   end
-
+  def busca
+    nome = params[:name]
+    @recipes = Recipe.where "name like ?", "#{@nome}"
+  end
   private
 
   def recipe_params
