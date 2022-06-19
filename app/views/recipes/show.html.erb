@@ -25,10 +25,7 @@
 </article>
 
 <div class="btn-group" role="group" aria-label="Exemplo básico">
-  <button type="button" class="btn btn-secondary"><%= link_to "Home", recipes_path, class:"btn btn-primary" %></button>
-    <% if user_signed_in? %>
-      <button type="button" class="btn btn-secondary"><%= link_to "Editar Receita", edit_recipe_path(@recipe), class:"btn btn-warning" %></button>
-      <button type="button" class="btn btn-secondary"><%= link_to "Deletar Receita", recipe_path(@recipe), method: :delete, class:"btn btn-danger", data: {confirm: "Remover receita?"}%></button>
-    <% end %>
+  <button type="button" class="btn btn-secondary"><%= link_to "Editar Receita", edit_recipe_path(@recipe), class:"btn btn-warning" %></button>
+  <button type="button" class="btn btn-secondary"><%= link_to "Deletar Receita", recipe_path(@recipe), method: :delete, class:"btn btn-danger", data: {confirm: "Remover receita?"}%></button>
 </div>
 
