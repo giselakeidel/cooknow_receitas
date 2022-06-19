@@ -1,5 +1,7 @@
 <h1>Receitas</h1>
 
+    <% if user_signed_in? %>
+
   <% @recipes.each do |recipe| %>
 
     <article>
@@ -8,6 +10,11 @@
         <%# imagem(recipe) %>
       </header>
     </article>
+  <% end %>
+  <% else %>
+  <h3>Entre com seu login e senha para ver as receitas!</h3>
+       <%= button_to "Sign In", new_user_session_path, class:"btn btn-primary" %>
+
   <% end %>
 
 
