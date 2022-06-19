@@ -11,15 +11,7 @@
   </head>
   
   <body>
-    <%= nav_bar brand: "CookNow", brand_link: root_url do %>
-      <%= menu_group do %>
-        <%= menu_item "Nova Receita", new_recipe_path %>
-      <% end %>
-      <%= form_tag recipes_path, method: :get, class:"navbar-form navbar-right" do %>
-        <%= text_field_tag :query, params[:query], class: "navbar-form", placeholder: "Encontre uma receita" %>
-          <%= submit_tag "Buscar Receita", class: "btn btn-primary" %>
-        <% end %>
-      <% end %>
+    <%= render 'layouts/header' %>
 
     <div class="container">
       <%= yield %>
