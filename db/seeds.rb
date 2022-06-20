@@ -68,36 +68,36 @@ Recipe.create!([
     portion: "6",
     duration: "00:40:00",
     poster: "mousse_limao.jpeg"
-    },
-    {
-      name: "Sorvete Caseiro",
-      stuff: "1 lata de leite condensado, 1 lata de creme de leite, 1 pacote de gelatina do seu sabor preferido",
-      calories: 450,
-      kind: "Sobremesa",
-      prepare_mode: "Prepare a gelatina normalmente (sem levar à geladeira) e enquanto ela ainda estiver quente bata no liquidificador junto com o creme de leite e o leite condensado. Coloque para congelar em um refratário com tampa, bata na batedeira (enquanto estiver congelado) e leve ao freezer novamente.",
-      portion: "8",
-      duration: "01:30:00",
-      poster: "sorvete_caseiro.jpeg"
-      },
-      {
-        name: "Pão de Queijo",
-        stuff: "1 caixa de creme de leite, 1 copo de queijo parmesão ralado, 1 copo de polvilho doce",
-        calories: 180,
-        kind: "Lanche",
-        prepare_mode: "Pré aqueça o forno enquanto amassa todos os ingredientes até eles formarem uma massa (que não grude nas mãos), faça bolinhas e coloque para assar em uma forma untada.",
-        portion: "10",
-        duration: "00:25:00",
-        poster: "pao_queijo.jpeg"
-        },
-        {
-          name: "Bolo para café da tarde",
-          stuff: "3 ovos, 2/3 de xícara de farinha com fermento, 1/2 xícara de açúcar refinado",
-          calories: 230,
-          kind: "Bolo",
-          prepare_mode: "Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme, depois misture a farinha. Coloque a massa em uma forma untada e asse.",
-          portion: "12",
-          duration: "00:45:00",
-          poster: "bolo.jpeg"
-          }
+  },
+  {
+  name: "Sorvete Caseiro",
+  stuff: "1 lata de leite condensado, 1 lata de creme de leite, 1 pacote de gelatina do seu sabor preferido",
+  calories: 450,
+  kind: "Sobremesa",
+  prepare_mode: "Prepare a gelatina normalmente (sem levar à geladeira) e enquanto ela ainda estiver quente bata no liquidificador junto com o creme de leite e o leite condensado. Coloque para congelar em um refratário com tampa, bata na batedeira (enquanto estiver congelado) e leve ao freezer novamente.",
+  portion: "8",
+  duration: "01:30:00",
+  poster: "sorvete_caseiro.jpeg"
+  },
+  {
+    name: "Pão de Queijo",
+    stuff: "1 caixa de creme de leite, 1 copo de queijo parmesão ralado, 1 copo de polvilho doce",
+    calories: 180,
+    kind: "Lanche",
+    prepare_mode: "Pré aqueça o forno enquanto amassa todos os ingredientes até eles formarem uma massa (que não grude nas mãos), faça bolinhas e coloque para assar em uma forma untada.",
+    portion: "10",
+    duration: "00:25:00",
+    poster: "pao_queijo.jpeg"
+  },
+  {
+    name: "Bolo para café da tarde",
+    stuff: "3 ovos, 2/3 de xícara de farinha com fermento, 1/2 xícara de açúcar refinado",
+    calories: 230,
+    kind: "Bolo",
+    prepare_mode: "Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme, depois misture a farinha. Coloque a massa em uma forma untada e asse.",
+    portion: "12",
+    duration: "00:45:00",
+    poster: "bolo.jpeg"
+    }
 
 ])
